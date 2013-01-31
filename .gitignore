@@ -1,0 +1,10 @@
+*.class
+*.apk
+*.ap_
+*.dex
+*.DS_Store
+*.proguard
+.metadata/
+bin/
+gen/
+local.properties
