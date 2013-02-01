@@ -18,10 +18,28 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <service
+            android:name="com.example.testbinder.ClientService"
+            android:process=":client_service"
+            android:exported="false"
+            >
+            <intent-filter >
+                <action android:name="com.example.testbinder.ClientService"></action>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.example.testbinder.ClientAidl"
+            android:process=":client_aidl_service"
+            android:exported="true"
+            >
+            <intent-filter >
+                <action android:name="com.example.testbinder.ClientAidl"></action>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
